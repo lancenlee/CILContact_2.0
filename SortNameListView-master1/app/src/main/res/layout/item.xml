@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" 
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        style="@style/TopBg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/catalog"
+            style="@style/TopTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="3dip"
+            android:paddingLeft="10dip"
+            android:paddingTop="3dip"
+            android:text="A" />
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:background="#323436"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:background="#323436"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_user_item_check"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/round_unchecked"
+            android:visibility="gone" />
+
+        <com.example.View.RoundImageView
+            android:id="@+id/iv_user_item_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/default_user"
+            local:border_inside_color="@color/round_inside_color"
+            local:border_outside_color="@color/round_outside_color"
+            local:border_thickness="@dimen/round_border_thickness" />
+
+        <TextView
+            android:id="@+id/tv_user_item_name"
+            style="@style/TextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:text="wang"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iv_user_item_sex"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/girl" />
+        
+        <TextView 
+            android:id="@+id/number_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="17865922887"
+            style="@style/TextColor"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+    
+    <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="40dp" 
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            >
+
+        <ImageButton
+            android:id="@+id/ibtncallPhone"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:focusable="false"
+            android:src="@drawable/callphone" />
+        
+          <ImageButton
+            android:id="@+id/ibtnsendMessage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:focusable="false"
+            android:src="@drawable/sendmessage" />
+          
+        </LinearLayout>
+    
+    </RelativeLayout>
+
+</LinearLayout>
